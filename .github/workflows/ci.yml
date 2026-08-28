@@ -7,8 +7,8 @@ jobs:
   steps:
     - name: Dire bonjour
       run: echo "Je suis le job bonjour"
-aurevoir:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Dire au revoir
-      run: echo "Je suis le job aurevoir"
+  aurevoir:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dire au revoir
+        run: echo "Je suis le job aurevoir"
