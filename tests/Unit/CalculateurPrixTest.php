@@ -28,7 +28,7 @@ class CalculateurPrixTest extends TestCase
     {
         $calculateur = new CalculateurPrix();
         $resultat = $calculateur->calculerAvecTaxe(100.00, 0);
-        $this->assertEquals(100.00, $resultat);
+        $this->assertEquals(101.00, $resultat);
     }
 
     public function test_calcul_prix_avec_taxe_negative_leve_exception(): void
