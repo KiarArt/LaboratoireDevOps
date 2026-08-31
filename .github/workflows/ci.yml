@@ -4,7 +4,7 @@ on:
   push:
     branches: ["*"]
   pull_request:
-    branches: [main]
+    branches: ["main"]
 
 jobs:
   lint:
@@ -67,6 +67,9 @@ jobs:
         run: |
           cp .env.example .env.testing
           php artisan key:generate --env=testing
+
+      - name: Lancer les tests
+        run: php artisan test
 
       - name: Tests avec couverture HTML
         run: php artisan test --coverage-html reports/coverage
